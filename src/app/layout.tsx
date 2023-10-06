@@ -24,11 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body
-        className={`${sans.className} flex flex-col w-full max-w-screen-2xl mx-auto`}
-      >
+      <body className={`${sans.className} flex flex-col`}>
         <Header />
-        <main className="grow">{children}</main>
+        <main className="grow w-full max-w-screen-2xl mx-auto">{children}</main>
         <Footer />
       </body>
     </html>
